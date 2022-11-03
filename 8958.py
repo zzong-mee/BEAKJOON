@@ -1,13 +1,11 @@
-c = int(input())
-for i in range(c):
-    strn = list(map(int, input().split()))
-    n = strn[0]
-    del strn[0]
-    avg = sum(strn)/n
-    count = 0
-    for i in range(len(strn)):
-        if strn[i] > avg:
+t = int(input())
+for _ in range(t):
+    ox = input()
+    point, count = 0, 1
+    for i in ox:
+        if i == "O":
+            point += count
             count += 1
         else:
-            continue
-    print(format((count/len(strn))*100, ".3f")+"%")
+            count = 1    
+    print(point)
