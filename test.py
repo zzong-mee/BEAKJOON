@@ -1,9 +1,3 @@
-num = [int(input()) for i in range(10)]
-rst = [num[i]%42 for i in range(10)]
-count = 0
-for i in range(42):
-    if rst.count(i) >= 1:
-        count += 1
-    else:
-        continue
-print(count)
+abc_list = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+k = [-1]*(len(abc_list))
+print(k)
